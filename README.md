@@ -10,6 +10,9 @@
 
 ```text
 
+# লগইন করা
+psql -h localhost -U postgres
+
 # pager থেকে বের হয়ে psql প্রম্পটে ফিরবে
 q    
 
