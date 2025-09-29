@@ -4,6 +4,28 @@
 
 ---
 
+## ##) Most-used Commands that I use
+
+```text
+
+# pager থেকে বের হয়ে psql প্রম্পটে ফিরবে
+q    
+
+# সব ডাটাবেস তালিকা              
+\l   
+
+# নতুন ডাটাবেস তৈরি
+CREATE DATABASE mydb OWNER postgres;                  
+
+#ইনপুট বাফার ক্লিয়ার
+\r
+```
+
+---
+
+
+---
+
 ## 0) Quick Setup (Mac)
 
 ```bash
