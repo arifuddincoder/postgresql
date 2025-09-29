@@ -24,6 +24,10 @@ CREATE DATABASE mydb OWNER postgres;
 
 # ইনপুট বাফার ক্লিয়ার
 \r
+
+# User Dekhar Jonno
+\du
+
 ```
 
 ---
