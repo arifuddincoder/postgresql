@@ -1,4 +1,4 @@
-# remembering: class: 7.3 Learning
+# remembering: class: 7.4 Learning
 
 # PostgreSQL Essential Shortcuts & Cheatsheet (Mac-friendly)
 
@@ -10,23 +10,36 @@
 
 ```text
 
-# লগইন করা
+# Login
 psql -h localhost -U postgres
 
-# pager থেকে বের হয়ে psql প্রম্পটে ফিরবে
+# pager to psql prompt
 q    
 
-# সব ডাটাবেস তালিকা              
+# All database listings            
 \l   
 
-# নতুন ডাটাবেস তৈরি
+# New database create
 CREATE DATABASE mydb OWNER postgres;                  
 
-# ইনপুট বাফার ক্লিয়ার
+# Clear input buffer
 \r
 
-# User Dekhar Jonno
+# See all users
 \du
+
+
+# create User
+create user user1 with login encrypted password '123';
+
+# remove user 
+DROP ROLE user1;
+
+# create table
+create table test_table (name varchar(50))
+
+# check table
+\d  
 
 ```
 
