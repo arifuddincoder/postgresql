@@ -35,12 +35,25 @@ create user user1 with login encrypted password '123';
 # remove user 
 DROP ROLE user1;
 
+
+# Connection between user and database
+GRANT CONNECT ON DATABASE test1 TO user1;  
+
 # create table
 create table test_table (name varchar(50))
 
 # check table
 \d  
 
+# Insert into table
+insert into test_table(name) values('Kamal');
+
+# check data into table
+select * from test_table;
+
+
+# giving access all privilege to the table
+grant all privileges on test_table to user1;
 ```
 
 ---
