@@ -10,7 +10,7 @@
 
 ```text
 
-# Login
+# Login --- pass added: 123
 psql -h localhost -U postgres
 
 # pager to psql prompt
@@ -54,6 +54,15 @@ select * from test_table;
 
 # giving access all privilege to the table
 grant all privileges on test_table to user1;
+
+
+#direct switch from postgres database to test1
+\c test1
+
+
+#direct switch from postgres database to test1 with user also
+\c test1 user1
+
 ```
 
 ---
