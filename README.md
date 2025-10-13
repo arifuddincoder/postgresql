@@ -1,4 +1,4 @@
-# remembering: class: 7.4 Learning
+# remembering: class: 7.10 Learning
 
 # Software:
 ```
@@ -9,6 +9,46 @@ https://www.postgresql.org/
 https://www.valentina-db.com/en/download-valentina-studio
 
 ```
+# SQL Query
+
+CREATE DATABASE titanMedical;
+
+CREATE TABLE user_table(
+ user_id SERIAL,
+first_name VARCHAR(50),
+last_name VARCHAR(50),
+ age INTEGER,
+ isActive BOOLEAN,
+ dob DATE
+ )
+
+ALTER TABLE "user_table" Rename to "user";
+
+DROP TABLE "user";
+
+## primary key, not null, foreign key, int check and Unique 
+CREATE TABLE students (
+  student_id INT PRIMARY KEY,
+  full_name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) UNIQUE NOT NULL,
+  department_id INT,
+  FOREIGN KEY (department_id) REFERENCES departments(department_id),
+   status VARCHAR(20) DEFAULT 'Active' ,
+   admission_date DATE DEFAULT CURRENT_DATE,
+    age INT CHECK (age >= 18),         
+  marks INT CHECK (marks BETWEEN 0 AND 100)
+);
+
+
+
+
+
+
+
+
+
+
+
 
 # PostgreSQL Essential Shortcuts & Cheatsheet (Mac-friendly)
 
