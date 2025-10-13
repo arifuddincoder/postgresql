@@ -1,5 +1,15 @@
 # remembering: class: 7.4 Learning
 
+# Software:
+```
+# PostgreSQL
+https://www.postgresql.org/
+
+# Valentina Studio
+https://www.valentina-db.com/en/download-valentina-studio
+
+```
+
 # PostgreSQL Essential Shortcuts & Cheatsheet (Mac-friendly)
 
 > দ্রুত হাতে কলমে কাজের জন্য `psql` কমান্ড, মেটা-কমান্ড, সাধারণ SQL, ও ব্যাকআপ/রিস্টোর—সবচেয়ে দরকারি জিনিসগুলোর সংক্ষিপ্ত তালিকা।
