@@ -39,6 +39,9 @@ CREATE TABLE students (
   marks INT CHECK (marks BETWEEN 0 AND 100)
 );
 
+## inserting data
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
 
 
 
