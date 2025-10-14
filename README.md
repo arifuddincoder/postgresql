@@ -1,4 +1,4 @@
-# remembering: class: 7.10 Learning
+# remembering: class: 8 Learning
 
 # Software:
 ```
@@ -44,6 +44,9 @@ INSERT INTO table_name (column1, column2, column3, ...)
 VALUES (value1, value2, value3, ...);
 
 
+## Adding new col to the table
+ALTER TABLE students
+ADD COLUMN email VARCHAR(100); 
 
 
 
