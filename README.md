@@ -8,7 +8,7 @@ https://www.postgresql.org/
 # Valentina Studio
 https://www.valentina-db.com/en/download-valentina-studio
 
-```
+
 # SQL Query
 
 CREATE DATABASE titanMedical;
@@ -72,7 +72,7 @@ DROP COLUMN student_email,
 DROP COLUMN age;
 
 
-
+```
 
 
 # PostgreSQL Essential Shortcuts & Cheatsheet (Mac-friendly)
