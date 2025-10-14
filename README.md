@@ -44,13 +44,32 @@ INSERT INTO table_name (column1, column2, column3, ...)
 VALUES (value1, value2, value3, ...);
 
 
+# student table: 
+CREATE TABLE student (id SERIAL PRIMARY KEY, roll INTEGER UNIQUE NOT NULL,  "name" VARCHAR(100) NOT NULL, age INTEGER NOT NULL, department VARCHAR(50), score FLOAT, status VARCHAR(50) DEFAULT'NA', lastlogin TIMESTAMPTZ); 
+
+
 ## Adding new col to the table
 ALTER TABLE students
 ADD COLUMN email VARCHAR(100); 
 
 
+## rename email field
+ALTER TABLE student
+RENAME COLUMN email TO student_email;
 
+# UNIQUE constraint to student_email.
+ALTER TABLE students
+ADD CONSTRAINT unique_student_email UNIQUE (student_email);
 
+-- or
+
+ALTER TABLE students
+ADD UNIQUE (student_email);
+
+# drop column
+ALTER TABLE students
+DROP COLUMN student_email,
+DROP COLUMN age;
 
 
 
